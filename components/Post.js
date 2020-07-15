@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, StyleSheet } from "react-native";
 import { Card } from "react-native-paper";
 import { Entypo, AntDesign, FontAwesome } from "@expo/vector-icons";
 
@@ -73,7 +73,24 @@ export default class Post extends React.Component {
             style={{ marginTop: 7, marginLeft: 230 }}
           />
         </View>
+        <Text style={styles.text}>Liked By You and 5,000 others</Text>
+        <View style={{ flexDirection: "row" }}>
+          <Text style={{ ...styles.text, fontWeight: "bold" }}>
+            tarun_sharma03
+          </Text>
+          <Text
+            style={{ ...styles.text, flexWrap: "wrap", marginLeft: 5, flex: 1 }}
+          >
+            Hey Guys, Tarun here! Testing the working of Post part!! Right now i
+            can't figure out how to adjust this text under the username. If you
+            know, please help me!!
+          </Text>
+        </View>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  text: { color: "white", fontSize: 15, marginLeft: 20, marginTop: 5 },
+});

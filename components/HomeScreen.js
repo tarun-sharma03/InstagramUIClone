@@ -12,7 +12,6 @@ export default class App extends React.Component {
           <ChatHead />
           <Post />
         </ScrollView>
-        <StatusBar style="auto" />
       </View>
     );
   }
