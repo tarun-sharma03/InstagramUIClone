@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./HomeScreen";
 import { AntDesign } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
+import Profile from "./ProfilePage";
 
 const BottomTab = createBottomTabNavigator();
 
@@ -41,7 +42,7 @@ export default function BottomNav() {
         <BottomTab.Screen name="Search" component={HomeScreen} />
         <BottomTab.Screen name="Add" component={HomeScreen} />
         <BottomTab.Screen name="Activity" component={HomeScreen} />
-        <BottomTab.Screen name="Profile" component={HomeScreen} />
+        <BottomTab.Screen name="Profile" component={Profile} />
       </BottomTab.Navigator>
     </NavigationContainer>
   );
